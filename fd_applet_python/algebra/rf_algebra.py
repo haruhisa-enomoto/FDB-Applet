@@ -661,6 +661,8 @@ class RfAlgebra:
 
         result.sort(key=lambda tc: len(tc))
         return result
+
+    @cached_property
     def torsion_free_classes(self) -> List[List["StringIndec"]]:
         """All torsion-free classes (closed under submodules and extensions)."""
         # Dual: F is torsion-free iff closed under submodules and extensions
